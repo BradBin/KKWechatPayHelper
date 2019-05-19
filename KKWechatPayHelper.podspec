@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KKWechatPayHelper'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of KKWechatPayHelper.'
+  s.version          = '1.0.0'
+  s.summary          = 'KKWechatPayHelper is a Tool for Wechat Pay.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+     KKWechatPayHelper is a Tool for Wechat Pay,Convenient and Fast Inheritance of Payment Function.
                        DESC
 
   s.homepage         = 'https://github.com/BradBin/KKWechatPayHelper'
@@ -28,15 +28,17 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/BradBin/KKWechatPayHelper.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = 'KKWechatPayHelper/Classes/**/*'
+  s.source_files = 'KKWechatPayHelper/Classes/**/*.{h,m}'
   
   # s.resource_bundles = {
   #   'KKWechatPayHelper' => ['KKWechatPayHelper/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'KKWechatPayHelper/Classes/**/*.h'
+  s.requires_arc = true
+  s.static_framework = true
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'WechatOpenSDK', '~> 1.8.4'
 end

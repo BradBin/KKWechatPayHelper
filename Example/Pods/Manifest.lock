@@ -1,0 +1,16 @@
+PODS:
+  - KKWechatPayHelper (0.1.0)
+
+DEPENDENCIES:
+  - KKWechatPayHelper (from `../`)
+
+EXTERNAL SOURCES:
+  KKWechatPayHelper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KKWechatPayHelper: d1411ae213f84d0eee65911d1369ddc4b073797e
+
+PODFILE CHECKSUM: 2ed2cc9c37d3c07574112022c055e23662c6f2d5
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06153AE2C23EA3D958227879909F62D9 /* Pods-KKWechatPayHelper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 539C1D97BE176C58FBF95AFF78EAAF6D /* Pods-KKWechatPayHelper_Tests-dummy.m */; };
+		138C5678259E3BCEFBBA74E76908C3AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		2B5FC632E1BD6531E69AA8132D60E086 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		3779448C4BDA989948E3C520DBC08E4A /* Pods-KKWechatPayHelper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B43C00AB888D2328EEFBD971BB1E9E3 /* Pods-KKWechatPayHelper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39849C57A214756A4A4BBC0ADA8C585D /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 7981D15D43F27376C2943C11C855C302 /* ReplaceMe.m */; };
+		3A50365AAA71ACED8A709211FDC1E474 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		C85D6BFCB52D10A59A96CD2968B5D57B /* KKWechatPayHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7505C5EFF47D6414175B5F85A2F3DAB1 /* KKWechatPayHelper-dummy.m */; };
+		DD131BCE3E0250DB24F39E6C050553F6 /* KKWechatPayHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CB2E2E8C6ABCF771CBB82B8FCC0F30 /* KKWechatPayHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFC5F78461AC46C7B62B232A36AF5390 /* Pods-KKWechatPayHelper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE87EC8411CA244213B84D9E74EE2E67 /* Pods-KKWechatPayHelper_Example-dummy.m */; };
+		E5BA7C1BD75D546073D421990E92989C /* Pods-KKWechatPayHelper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C37F0FB36EF90EDAC767FF8A470EF3A /* Pods-KKWechatPayHelper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9071F78DD787BCEAD901F6B313565552 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F65F097A23646B9AB8A54DA039018DDA;
+			remoteInfo = "Pods-KKWechatPayHelper_Example";
+		};
+		FD81E9D3393E4238F64EDED44AD6F3D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C0FB80E1D7B5681D1099D2D1723B652;
+			remoteInfo = KKWechatPayHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0058B2B195822E1557F0EB8C312A2AF8 /* Pods-KKWechatPayHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKWechatPayHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		27194FE8D2578341B652345BDDA2B9F1 /* KKWechatPayHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KKWechatPayHelper.modulemap; sourceTree = "<group>"; };
+		39F2ECA8AADD5D1902BA9B060B3C5A00 /* Pods-KKWechatPayHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKWechatPayHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
+		40E3C961F0C300501DB8448E2322D22C /* Pods_KKWechatPayHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KKWechatPayHelper_Tests.framework; path = "Pods-KKWechatPayHelper_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C37F0FB36EF90EDAC767FF8A470EF3A /* Pods-KKWechatPayHelper_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KKWechatPayHelper_Example-umbrella.h"; sourceTree = "<group>"; };
+		539C1D97BE176C58FBF95AFF78EAAF6D /* Pods-KKWechatPayHelper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KKWechatPayHelper_Tests-dummy.m"; sourceTree = "<group>"; };
+		5B43C00AB888D2328EEFBD971BB1E9E3 /* Pods-KKWechatPayHelper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KKWechatPayHelper_Tests-umbrella.h"; sourceTree = "<group>"; };
+		5D45FED5698D0D8B62EDE5B9B046283E /* KKWechatPayHelper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KKWechatPayHelper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5F7C4C8B7CF0C5651F3589A94EA19999 /* KKWechatPayHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKWechatPayHelper-prefix.pch"; sourceTree = "<group>"; };
+		68EF1864BFBB0560B45D47C9A1072EBE /* Pods-KKWechatPayHelper_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKWechatPayHelper_Example-Info.plist"; sourceTree = "<group>"; };
+		70520B0D9855B0F0CFD16D7A420B3A72 /* Pods-KKWechatPayHelper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KKWechatPayHelper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7505C5EFF47D6414175B5F85A2F3DAB1 /* KKWechatPayHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KKWechatPayHelper-dummy.m"; sourceTree = "<group>"; };
+		77C685755918C7FC2C9FFF89073AC71F /* Pods-KKWechatPayHelper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKWechatPayHelper_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7981D15D43F27376C2943C11C855C302 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = KKWechatPayHelper/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		89304C0A41D4F8691BF9A22150D059FC /* Pods-KKWechatPayHelper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KKWechatPayHelper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8A180B5BEBC9AD5D67ED9F9BD2B9C76B /* Pods-KKWechatPayHelper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KKWechatPayHelper_Tests.modulemap"; sourceTree = "<group>"; };
+		8EDFCF6CBC8134CE520AB1421F27582A /* KKWechatPayHelper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KKWechatPayHelper.xcconfig; sourceTree = "<group>"; };
+		92CB2E2E8C6ABCF771CBB82B8FCC0F30 /* KKWechatPayHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKWechatPayHelper-umbrella.h"; sourceTree = "<group>"; };
+		944820A92F0983BD623C9236D22E9CB4 /* Pods-KKWechatPayHelper_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKWechatPayHelper_Tests-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AE200142657BA6B6DDAC8C10C76CB411 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BF2405E45390814711FAEAEB7F62C270 /* Pods-KKWechatPayHelper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KKWechatPayHelper_Example.modulemap"; sourceTree = "<group>"; };
+		C19EECC199685B16363C890BA62DB328 /* Pods-KKWechatPayHelper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKWechatPayHelper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C427FB20014084F350554618C575BDD9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C53FCF56A086F1FC164D349356B4062B /* Pods-KKWechatPayHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKWechatPayHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C682E416F440C9027B9E8A7FEBC805DD /* Pods-KKWechatPayHelper_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKWechatPayHelper_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D3C238DD4950D8D48FE8E3B9B479A35B /* KKWechatPayHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KKWechatPayHelper.framework; path = KKWechatPayHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFA2D5EA9B45852519BEDDA459F0BB0 /* Pods_KKWechatPayHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KKWechatPayHelper_Example.framework; path = "Pods-KKWechatPayHelper_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1DF3D5561ACBB16C49047A659D223E1 /* Pods-KKWechatPayHelper_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKWechatPayHelper_Example-frameworks.sh"; sourceTree = "<group>"; };
+		FCBF8B8D55310E91735190C538A70ED8 /* KKWechatPayHelper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KKWechatPayHelper-Info.plist"; sourceTree = "<group>"; };
+		FE87EC8411CA244213B84D9E74EE2E67 /* Pods-KKWechatPayHelper_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KKWechatPayHelper_Example-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39504DFABC9EB3BD59F656E2A394A94E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B5FC632E1BD6531E69AA8132D60E086 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		563AD749E484FE8492EAF1973AABCCCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				138C5678259E3BCEFBBA74E76908C3AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1971EDFB0D6AB42929402DF4D9898F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A50365AAA71ACED8A709211FDC1E474 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08332FA29E312CA63D8F6798F7DA5923 /* Pods-KKWechatPayHelper_Example */ = {
+			isa = PBXGroup;
+			children = (
+				BF2405E45390814711FAEAEB7F62C270 /* Pods-KKWechatPayHelper_Example.modulemap */,
+				89304C0A41D4F8691BF9A22150D059FC /* Pods-KKWechatPayHelper_Example-acknowledgements.markdown */,
+				C19EECC199685B16363C890BA62DB328 /* Pods-KKWechatPayHelper_Example-acknowledgements.plist */,
+				FE87EC8411CA244213B84D9E74EE2E67 /* Pods-KKWechatPayHelper_Example-dummy.m */,
+				F1DF3D5561ACBB16C49047A659D223E1 /* Pods-KKWechatPayHelper_Example-frameworks.sh */,
+				68EF1864BFBB0560B45D47C9A1072EBE /* Pods-KKWechatPayHelper_Example-Info.plist */,
+				4C37F0FB36EF90EDAC767FF8A470EF3A /* Pods-KKWechatPayHelper_Example-umbrella.h */,
+				C53FCF56A086F1FC164D349356B4062B /* Pods-KKWechatPayHelper_Example.debug.xcconfig */,
+				39F2ECA8AADD5D1902BA9B060B3C5A00 /* Pods-KKWechatPayHelper_Example.release.xcconfig */,
+			);
+			name = "Pods-KKWechatPayHelper_Example";
+			path = "Target Support Files/Pods-KKWechatPayHelper_Example";
+			sourceTree = "<group>";
+		};
+		2E62AD9EEE9FB31B747CE5FBE0DE10C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3C238DD4950D8D48FE8E3B9B479A35B /* KKWechatPayHelper.framework */,
+				DAFA2D5EA9B45852519BEDDA459F0BB0 /* Pods_KKWechatPayHelper_Example.framework */,
+				40E3C961F0C300501DB8448E2322D22C /* Pods_KKWechatPayHelper_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FAFD0D3B0A10851D08FCCBCC8422B59 /* Pods-KKWechatPayHelper_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8A180B5BEBC9AD5D67ED9F9BD2B9C76B /* Pods-KKWechatPayHelper_Tests.modulemap */,
+				70520B0D9855B0F0CFD16D7A420B3A72 /* Pods-KKWechatPayHelper_Tests-acknowledgements.markdown */,
+				C682E416F440C9027B9E8A7FEBC805DD /* Pods-KKWechatPayHelper_Tests-acknowledgements.plist */,
+				539C1D97BE176C58FBF95AFF78EAAF6D /* Pods-KKWechatPayHelper_Tests-dummy.m */,
+				944820A92F0983BD623C9236D22E9CB4 /* Pods-KKWechatPayHelper_Tests-Info.plist */,
+				5B43C00AB888D2328EEFBD971BB1E9E3 /* Pods-KKWechatPayHelper_Tests-umbrella.h */,
+				0058B2B195822E1557F0EB8C312A2AF8 /* Pods-KKWechatPayHelper_Tests.debug.xcconfig */,
+				77C685755918C7FC2C9FFF89073AC71F /* Pods-KKWechatPayHelper_Tests.release.xcconfig */,
+			);
+			name = "Pods-KKWechatPayHelper_Tests";
+			path = "Target Support Files/Pods-KKWechatPayHelper_Tests";
+			sourceTree = "<group>";
+		};
+		944FD8453C18346106F839B8F64F0724 /* KKWechatPayHelper */ = {
+			isa = PBXGroup;
+			children = (
+				7981D15D43F27376C2943C11C855C302 /* ReplaceMe.m */,
+				D1AD03617F315C0044845C89B67AC83C /* Pod */,
+				AE1FF29217B70260822EEB1B6CC1FFD4 /* Support Files */,
+			);
+			name = KKWechatPayHelper;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AE1FF29217B70260822EEB1B6CC1FFD4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				27194FE8D2578341B652345BDDA2B9F1 /* KKWechatPayHelper.modulemap */,
+				8EDFCF6CBC8134CE520AB1421F27582A /* KKWechatPayHelper.xcconfig */,
+				7505C5EFF47D6414175B5F85A2F3DAB1 /* KKWechatPayHelper-dummy.m */,
+				FCBF8B8D55310E91735190C538A70ED8 /* KKWechatPayHelper-Info.plist */,
+				5F7C4C8B7CF0C5651F3589A94EA19999 /* KKWechatPayHelper-prefix.pch */,
+				92CB2E2E8C6ABCF771CBB82B8FCC0F30 /* KKWechatPayHelper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KKWechatPayHelper";
+			sourceTree = "<group>";
+		};
+		B9A7671E4C2B7C3735B2E5533B77D006 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				08332FA29E312CA63D8F6798F7DA5923 /* Pods-KKWechatPayHelper_Example */,
+				6FAFD0D3B0A10851D08FCCBCC8422B59 /* Pods-KKWechatPayHelper_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BD73BDA37AB74EF60A81BFEFEB34CAC3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				944FD8453C18346106F839B8F64F0724 /* KKWechatPayHelper */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BD73BDA37AB74EF60A81BFEFEB34CAC3 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				2E62AD9EEE9FB31B747CE5FBE0DE10C5 /* Products */,
+				B9A7671E4C2B7C3735B2E5533B77D006 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D1AD03617F315C0044845C89B67AC83C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5D45FED5698D0D8B62EDE5B9B046283E /* KKWechatPayHelper.podspec */,
+				C427FB20014084F350554618C575BDD9 /* LICENSE */,
+				AE200142657BA6B6DDAC8C10C76CB411 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		173740D7FF2225D21DA2A938231BF5AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD131BCE3E0250DB24F39E6C050553F6 /* KKWechatPayHelper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64949C72F19A31101EFA9082B71D0226 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3779448C4BDA989948E3C520DBC08E4A /* Pods-KKWechatPayHelper_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD77BBBF92FD53E8ABFF68786815125 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5BA7C1BD75D546073D421990E92989C /* Pods-KKWechatPayHelper_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		414722F368D40960ABAB79B465B85F76 /* Pods-KKWechatPayHelper_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8C55F029E32486F15CFB70BDEB87372 /* Build configuration list for PBXNativeTarget "Pods-KKWechatPayHelper_Tests" */;
+			buildPhases = (
+				64949C72F19A31101EFA9082B71D0226 /* Headers */,
+				D99BAC97F6E2A58F4663B6167240115C /* Sources */,
+				563AD749E484FE8492EAF1973AABCCCE /* Frameworks */,
+				779F97B3B0AC85A4F89C594002659F71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AEA6DCABDE5B6F805FFD452F2DF77C8 /* PBXTargetDependency */,
+			);
+			name = "Pods-KKWechatPayHelper_Tests";
+			productName = "Pods-KKWechatPayHelper_Tests";
+			productReference = 40E3C961F0C300501DB8448E2322D22C /* Pods_KKWechatPayHelper_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6C0FB80E1D7B5681D1099D2D1723B652 /* KKWechatPayHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCA968B8F67B10FD3B041C4BEAA9F0C2 /* Build configuration list for PBXNativeTarget "KKWechatPayHelper" */;
+			buildPhases = (
+				173740D7FF2225D21DA2A938231BF5AA /* Headers */,
+				0729ACAC23CA65D5817DECDBDCDD4DEB /* Sources */,
+				A1971EDFB0D6AB42929402DF4D9898F3 /* Frameworks */,
+				C188E28D351181FA55F8AE746F778952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KKWechatPayHelper;
+			productName = KKWechatPayHelper;
+			productReference = D3C238DD4950D8D48FE8E3B9B479A35B /* KKWechatPayHelper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F65F097A23646B9AB8A54DA039018DDA /* Pods-KKWechatPayHelper_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE56626A956E06D094150E61A379CD07 /* Build configuration list for PBXNativeTarget "Pods-KKWechatPayHelper_Example" */;
+			buildPhases = (
+				9AD77BBBF92FD53E8ABFF68786815125 /* Headers */,
+				44F80E951C58433DD27DF95AC41044AA /* Sources */,
+				39504DFABC9EB3BD59F656E2A394A94E /* Frameworks */,
+				73ACEA67CB86D36A9CE6212C9FB9A93F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F67FDCDA29DA55F8056184A5212AE41 /* PBXTargetDependency */,
+			);
+			name = "Pods-KKWechatPayHelper_Example";
+			productName = "Pods-KKWechatPayHelper_Example";
+			productReference = DAFA2D5EA9B45852519BEDDA459F0BB0 /* Pods_KKWechatPayHelper_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2E62AD9EEE9FB31B747CE5FBE0DE10C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C0FB80E1D7B5681D1099D2D1723B652 /* KKWechatPayHelper */,
+				F65F097A23646B9AB8A54DA039018DDA /* Pods-KKWechatPayHelper_Example */,
+				414722F368D40960ABAB79B465B85F76 /* Pods-KKWechatPayHelper_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73ACEA67CB86D36A9CE6212C9FB9A93F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		779F97B3B0AC85A4F89C594002659F71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C188E28D351181FA55F8AE746F778952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0729ACAC23CA65D5817DECDBDCDD4DEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C85D6BFCB52D10A59A96CD2968B5D57B /* KKWechatPayHelper-dummy.m in Sources */,
+				39849C57A214756A4A4BBC0ADA8C585D /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F80E951C58433DD27DF95AC41044AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFC5F78461AC46C7B62B232A36AF5390 /* Pods-KKWechatPayHelper_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99BAC97F6E2A58F4663B6167240115C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06153AE2C23EA3D958227879909F62D9 /* Pods-KKWechatPayHelper_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F67FDCDA29DA55F8056184A5212AE41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KKWechatPayHelper;
+			target = 6C0FB80E1D7B5681D1099D2D1723B652 /* KKWechatPayHelper */;
+			targetProxy = FD81E9D3393E4238F64EDED44AD6F3D0 /* PBXContainerItemProxy */;
+		};
+		5AEA6DCABDE5B6F805FFD452F2DF77C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KKWechatPayHelper_Example";
+			target = F65F097A23646B9AB8A54DA039018DDA /* Pods-KKWechatPayHelper_Example */;
+			targetProxy = 9071F78DD787BCEAD901F6B313565552 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05DF210AC65EBB0E593AAF976B2C2177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		421ECB1396280A8D83853C3DDBED1700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		43CD5C992F7E61FB4BF0D6363725133D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77C685755918C7FC2C9FFF89073AC71F /* Pods-KKWechatPayHelper_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KKWechatPayHelper_Tests/Pods-KKWechatPayHelper_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KKWechatPayHelper_Tests/Pods-KKWechatPayHelper_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		613AE20F678A0AE559A15A78D43C3309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0058B2B195822E1557F0EB8C312A2AF8 /* Pods-KKWechatPayHelper_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KKWechatPayHelper_Tests/Pods-KKWechatPayHelper_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KKWechatPayHelper_Tests/Pods-KKWechatPayHelper_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A483BB4A0FB638973890912E9CF8AEBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C53FCF56A086F1FC164D349356B4062B /* Pods-KKWechatPayHelper_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KKWechatPayHelper_Example/Pods-KKWechatPayHelper_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KKWechatPayHelper_Example/Pods-KKWechatPayHelper_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AC273E043726D31AE8C50BAD85954420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EDFCF6CBC8134CE520AB1421F27582A /* KKWechatPayHelper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KKWechatPayHelper/KKWechatPayHelper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KKWechatPayHelper/KKWechatPayHelper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KKWechatPayHelper/KKWechatPayHelper.modulemap";
+				PRODUCT_MODULE_NAME = KKWechatPayHelper;
+				PRODUCT_NAME = KKWechatPayHelper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CDE63381181F38FEF0415ADC14E92657 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39F2ECA8AADD5D1902BA9B060B3C5A00 /* Pods-KKWechatPayHelper_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KKWechatPayHelper_Example/Pods-KKWechatPayHelper_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KKWechatPayHelper_Example/Pods-KKWechatPayHelper_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E7D0EDA65BF85596A6B367D4B768492C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EDFCF6CBC8134CE520AB1421F27582A /* KKWechatPayHelper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KKWechatPayHelper/KKWechatPayHelper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KKWechatPayHelper/KKWechatPayHelper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KKWechatPayHelper/KKWechatPayHelper.modulemap";
+				PRODUCT_MODULE_NAME = KKWechatPayHelper;
+				PRODUCT_NAME = KKWechatPayHelper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421ECB1396280A8D83853C3DDBED1700 /* Debug */,
+				05DF210AC65EBB0E593AAF976B2C2177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8C55F029E32486F15CFB70BDEB87372 /* Build configuration list for PBXNativeTarget "Pods-KKWechatPayHelper_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				613AE20F678A0AE559A15A78D43C3309 /* Debug */,
+				43CD5C992F7E61FB4BF0D6363725133D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCA968B8F67B10FD3B041C4BEAA9F0C2 /* Build configuration list for PBXNativeTarget "KKWechatPayHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC273E043726D31AE8C50BAD85954420 /* Debug */,
+				E7D0EDA65BF85596A6B367D4B768492C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE56626A956E06D094150E61A379CD07 /* Build configuration list for PBXNativeTarget "Pods-KKWechatPayHelper_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A483BB4A0FB638973890912E9CF8AEBA /* Debug */,
+				CDE63381181F38FEF0415ADC14E92657 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

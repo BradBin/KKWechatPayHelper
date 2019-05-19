@@ -1,0 +1,6 @@
+framework module KKWechatPayHelper {
+  umbrella header "KKWechatPayHelper-umbrella.h"
+
+  export *
+  module * { export * }
+}
