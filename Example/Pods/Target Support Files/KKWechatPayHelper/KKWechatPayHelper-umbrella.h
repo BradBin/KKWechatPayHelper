@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "KKWechatPayHelper.h"
+#import "KKWechatPayManager.h"
 
 FOUNDATION_EXPORT double KKWechatPayHelperVersionNumber;
 FOUNDATION_EXPORT const unsigned char KKWechatPayHelperVersionString[];

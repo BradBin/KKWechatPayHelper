@@ -1,16 +1,23 @@
 PODS:
-  - KKWechatPayHelper (0.1.0)
+  - KKWechatPayHelper (1.0.0):
+    - WechatOpenSDK (~> 1.8.4)
+  - WechatOpenSDK (1.8.4)
 
 DEPENDENCIES:
   - KKWechatPayHelper (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - WechatOpenSDK
 
 EXTERNAL SOURCES:
   KKWechatPayHelper:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KKWechatPayHelper: d1411ae213f84d0eee65911d1369ddc4b073797e
+  KKWechatPayHelper: ef70246c2ba9937e1b15739dbe5e497b46ee24fb
+  WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
 
-PODFILE CHECKSUM: 2ed2cc9c37d3c07574112022c055e23662c6f2d5
+PODFILE CHECKSUM: 96c145da56eeed505f2719455735f69a8b02926f
 
 COCOAPODS: 1.6.1
