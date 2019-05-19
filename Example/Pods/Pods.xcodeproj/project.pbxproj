@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		06153AE2C23EA3D958227879909F62D9 /* Pods-KKWechatPayHelper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 539C1D97BE176C58FBF95AFF78EAAF6D /* Pods-KKWechatPayHelper_Tests-dummy.m */; };
+		0AF4B48122912B8A0013F85D /* KKWechatPayHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF4B47D22912B8A0013F85D /* KKWechatPayHelper.h */; };
+		0AF4B48222912B8A0013F85D /* KKWechatPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF4B47F22912B8A0013F85D /* KKWechatPayManager.m */; };
+		0AF4B48322912B8A0013F85D /* KKWechatPayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF4B48022912B8A0013F85D /* KKWechatPayManager.h */; };
 		138C5678259E3BCEFBBA74E76908C3AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		2B5FC632E1BD6531E69AA8132D60E086 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		3779448C4BDA989948E3C520DBC08E4A /* Pods-KKWechatPayHelper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B43C00AB888D2328EEFBD971BB1E9E3 /* Pods-KKWechatPayHelper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39849C57A214756A4A4BBC0ADA8C585D /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 7981D15D43F27376C2943C11C855C302 /* ReplaceMe.m */; };
 		3A50365AAA71ACED8A709211FDC1E474 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		C85D6BFCB52D10A59A96CD2968B5D57B /* KKWechatPayHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7505C5EFF47D6414175B5F85A2F3DAB1 /* KKWechatPayHelper-dummy.m */; };
 		DD131BCE3E0250DB24F39E6C050553F6 /* KKWechatPayHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92CB2E2E8C6ABCF771CBB82B8FCC0F30 /* KKWechatPayHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,34 +40,36 @@
 
 /* Begin PBXFileReference section */
 		0058B2B195822E1557F0EB8C312A2AF8 /* Pods-KKWechatPayHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKWechatPayHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0AF4B47D22912B8A0013F85D /* KKWechatPayHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KKWechatPayHelper.h; path = KKWechatPayHelper/Classes/KKWechatPayHelper.h; sourceTree = "<group>"; };
+		0AF4B47F22912B8A0013F85D /* KKWechatPayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKWechatPayManager.m; sourceTree = "<group>"; };
+		0AF4B48022912B8A0013F85D /* KKWechatPayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKWechatPayManager.h; sourceTree = "<group>"; };
 		27194FE8D2578341B652345BDDA2B9F1 /* KKWechatPayHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KKWechatPayHelper.modulemap; sourceTree = "<group>"; };
 		39F2ECA8AADD5D1902BA9B060B3C5A00 /* Pods-KKWechatPayHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKWechatPayHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
-		40E3C961F0C300501DB8448E2322D22C /* Pods_KKWechatPayHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KKWechatPayHelper_Tests.framework; path = "Pods-KKWechatPayHelper_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E3C961F0C300501DB8448E2322D22C /* Pods_KKWechatPayHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKWechatPayHelper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C37F0FB36EF90EDAC767FF8A470EF3A /* Pods-KKWechatPayHelper_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KKWechatPayHelper_Example-umbrella.h"; sourceTree = "<group>"; };
 		539C1D97BE176C58FBF95AFF78EAAF6D /* Pods-KKWechatPayHelper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KKWechatPayHelper_Tests-dummy.m"; sourceTree = "<group>"; };
 		5B43C00AB888D2328EEFBD971BB1E9E3 /* Pods-KKWechatPayHelper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KKWechatPayHelper_Tests-umbrella.h"; sourceTree = "<group>"; };
-		5D45FED5698D0D8B62EDE5B9B046283E /* KKWechatPayHelper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KKWechatPayHelper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5D45FED5698D0D8B62EDE5B9B046283E /* KKWechatPayHelper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = KKWechatPayHelper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5F7C4C8B7CF0C5651F3589A94EA19999 /* KKWechatPayHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKWechatPayHelper-prefix.pch"; sourceTree = "<group>"; };
 		68EF1864BFBB0560B45D47C9A1072EBE /* Pods-KKWechatPayHelper_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKWechatPayHelper_Example-Info.plist"; sourceTree = "<group>"; };
 		70520B0D9855B0F0CFD16D7A420B3A72 /* Pods-KKWechatPayHelper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KKWechatPayHelper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7505C5EFF47D6414175B5F85A2F3DAB1 /* KKWechatPayHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KKWechatPayHelper-dummy.m"; sourceTree = "<group>"; };
 		77C685755918C7FC2C9FFF89073AC71F /* Pods-KKWechatPayHelper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKWechatPayHelper_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		7981D15D43F27376C2943C11C855C302 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = KKWechatPayHelper/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		89304C0A41D4F8691BF9A22150D059FC /* Pods-KKWechatPayHelper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KKWechatPayHelper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8A180B5BEBC9AD5D67ED9F9BD2B9C76B /* Pods-KKWechatPayHelper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KKWechatPayHelper_Tests.modulemap"; sourceTree = "<group>"; };
 		8EDFCF6CBC8134CE520AB1421F27582A /* KKWechatPayHelper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KKWechatPayHelper.xcconfig; sourceTree = "<group>"; };
 		92CB2E2E8C6ABCF771CBB82B8FCC0F30 /* KKWechatPayHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKWechatPayHelper-umbrella.h"; sourceTree = "<group>"; };
 		944820A92F0983BD623C9236D22E9CB4 /* Pods-KKWechatPayHelper_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKWechatPayHelper_Tests-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AE200142657BA6B6DDAC8C10C76CB411 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AE200142657BA6B6DDAC8C10C76CB411 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BF2405E45390814711FAEAEB7F62C270 /* Pods-KKWechatPayHelper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KKWechatPayHelper_Example.modulemap"; sourceTree = "<group>"; };
 		C19EECC199685B16363C890BA62DB328 /* Pods-KKWechatPayHelper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKWechatPayHelper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		C427FB20014084F350554618C575BDD9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C427FB20014084F350554618C575BDD9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C53FCF56A086F1FC164D349356B4062B /* Pods-KKWechatPayHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKWechatPayHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C682E416F440C9027B9E8A7FEBC805DD /* Pods-KKWechatPayHelper_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKWechatPayHelper_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D3C238DD4950D8D48FE8E3B9B479A35B /* KKWechatPayHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KKWechatPayHelper.framework; path = KKWechatPayHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAFA2D5EA9B45852519BEDDA459F0BB0 /* Pods_KKWechatPayHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KKWechatPayHelper_Example.framework; path = "Pods-KKWechatPayHelper_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3C238DD4950D8D48FE8E3B9B479A35B /* KKWechatPayHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KKWechatPayHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFA2D5EA9B45852519BEDDA459F0BB0 /* Pods_KKWechatPayHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKWechatPayHelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1DF3D5561ACBB16C49047A659D223E1 /* Pods-KKWechatPayHelper_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKWechatPayHelper_Example-frameworks.sh"; sourceTree = "<group>"; };
 		FCBF8B8D55310E91735190C538A70ED8 /* KKWechatPayHelper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KKWechatPayHelper-Info.plist"; sourceTree = "<group>"; };
 		FE87EC8411CA244213B84D9E74EE2E67 /* Pods-KKWechatPayHelper_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KKWechatPayHelper_Example-dummy.m"; sourceTree = "<group>"; };
@@ -116,6 +120,16 @@
 			path = "Target Support Files/Pods-KKWechatPayHelper_Example";
 			sourceTree = "<group>";
 		};
+		0AF4B47E22912B8A0013F85D /* KKWechatPayManager */ = {
+			isa = PBXGroup;
+			children = (
+				0AF4B48022912B8A0013F85D /* KKWechatPayManager.h */,
+				0AF4B47F22912B8A0013F85D /* KKWechatPayManager.m */,
+			);
+			name = KKWechatPayManager;
+			path = KKWechatPayHelper/Classes/KKWechatPayManager;
+			sourceTree = "<group>";
+		};
 		2E62AD9EEE9FB31B747CE5FBE0DE10C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,7 +159,8 @@
 		944FD8453C18346106F839B8F64F0724 /* KKWechatPayHelper */ = {
 			isa = PBXGroup;
 			children = (
-				7981D15D43F27376C2943C11C855C302 /* ReplaceMe.m */,
+				0AF4B47D22912B8A0013F85D /* KKWechatPayHelper.h */,
+				0AF4B47E22912B8A0013F85D /* KKWechatPayManager */,
 				D1AD03617F315C0044845C89B67AC83C /* Pod */,
 				AE1FF29217B70260822EEB1B6CC1FFD4 /* Support Files */,
 			);
@@ -229,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD131BCE3E0250DB24F39E6C050553F6 /* KKWechatPayHelper-umbrella.h in Headers */,
+				0AF4B48122912B8A0013F85D /* KKWechatPayHelper.h in Headers */,
+				0AF4B48322912B8A0013F85D /* KKWechatPayManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +338,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -364,8 +382,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF4B48222912B8A0013F85D /* KKWechatPayManager.m in Sources */,
 				C85D6BFCB52D10A59A96CD2968B5D57B /* KKWechatPayHelper-dummy.m in Sources */,
-				39849C57A214756A4A4BBC0ADA8C585D /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,8 +474,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
