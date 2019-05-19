@@ -1,9 +1,6 @@
 # KKWechatPayHelper
 
-[![CI Status](https://img.shields.io/travis/BradBin/KKWechatPayHelper.svg?style=flat)](https://travis-ci.org/BradBin/KKWechatPayHelper)
-[![Version](https://img.shields.io/cocoapods/v/KKWechatPayHelper.svg?style=flat)](https://cocoapods.org/pods/KKWechatPayHelper)
-[![License](https://img.shields.io/cocoapods/l/KKWechatPayHelper.svg?style=flat)](https://cocoapods.org/pods/KKWechatPayHelper)
-[![Platform](https://img.shields.io/cocoapods/p/KKWechatPayHelper.svg?style=flat)](https://cocoapods.org/pods/KKWechatPayHelper)
+KKWechatPayHelper is a Tool for Wechat Pay,Convenient and Fast Inheritance of Payment Function.
 
 ## Example
 
