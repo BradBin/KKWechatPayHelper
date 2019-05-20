@@ -24,11 +24,18 @@ typedef NS_ENUM(NSUInteger,KKWechatPayMode) {
     KKWechatPayModeDetail
 };
 
+
+/**
+ 支付结果枚举
+
+ - KKWechatPayStatusSuccess: 成功,展示成功页面
+ - KKWechatPayStatusFailure: 错误,可能的原因：签名错误、未注册APPID、项目设置APPID不正确、注册的APPID与设置的不匹配、其他异常等。
+ - KKWechatPayStatusCancel: 用户取消,无需处理。发生场景：用户不支付了，点击取消，返回APP。
+ */
 typedef NS_ENUM(NSInteger,KKWechatPayStatus) {
-    KKWechatPayStatusSuccess,        //支付成功
-    KKWechatPayStatusFailure,        //支付失败
-    KKWechatPayStatusCancel,         //支付取消
-    KKWechatPayStatusUnknownCancel   //支付取消，交易已发起，状态不确定，商户需查询商户后台确认支付状态
+    KKWechatPayStatusSuccess =  0,
+    KKWechatPayStatusFailure = -1,
+    KKWechatPayStatusCancel  = -2
 };
 
 /**
@@ -54,6 +61,15 @@ typedef void(^ _Nullable KKWechatPayBlock)(KKWechatPayStatus status,NSDictionary
 + (instancetype)shared;
 
 /**
+ 启动第三方应用程序时调用。第一次调用后，会在微信的可用应用列表中出现
+ 备注:确保证在主线程中调用此函数
+ @param appid 微信开发者ID
+ @param isEnableMTA 是否支持MTA数据上报
+ @return 成功返回YES，失败返回NO。
+ */
+- (BOOL)registerApp:(NSString *)appid enableMTA:(BOOL)isEnableMTA;
+
+/**
  微信SDK的运行模式,默认是生产模式
 
  @param mode 运行模式
@@ -67,6 +83,23 @@ typedef void(^ _Nullable KKWechatPayBlock)(KKWechatPayStatus status,NSDictionary
  */
 - (BOOL)isWechatAppInstalled;
 
+/**
+ 获取微信的itunes的链接地址
+
+ @return 链接地址
+ */
+- (NSURL *)getWechatAppInstallUrl;
+
+/**
+ 发起微信支付请求
+ 备注:支付成功则去后台查询支付结果,再去展示给用户实际支付结果页面,一定
+ 不能以客户端返回作为t用户支付结果
+
+ @param request 请求内容
+ @param completion 请求结果回调block
+ @return 成功返回YES，失败返回NO
+ */
+- (BOOL)payOrder:(KKWechatPayRequest *)request completion:(KKWechatPayBlock)completion;
 
 /**
  处理客户端回调

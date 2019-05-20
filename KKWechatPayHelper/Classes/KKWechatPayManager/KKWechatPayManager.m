@@ -9,7 +9,6 @@
 #import <WechatOpenSDK/WXApi.h>
 #import <WechatOpenSDK/WechatAuthSDK.h>
 
-
 @interface KKWechatPayManager()<WXApiDelegate>
 
 /**
@@ -45,6 +44,10 @@
     return _instance;
 }
 
+-(BOOL)registerApp:(NSString *)appid enableMTA:(BOOL)isEnableMTA{
+    return [WXApi registerApp:appid enableMTA:isEnableMTA];
+}
+
 - (void)setWechatPayMode:(KKWechatPayMode)mode{
     _mode = mode;
     switch (mode) {
@@ -70,6 +73,22 @@
     return [WXApi isWXAppInstalled];
 }
 
+-(NSURL *)getWechatAppInstallUrl{
+    return [NSURL URLWithString:WXApi.getWXAppInstallUrl];
+}
+
+-(BOOL)payOrder:(KKWechatPayRequest *)request completion:(KKWechatPayBlock)completion{
+    self.completionBlock = completion;
+    PayReq *req   = PayReq.alloc.init;
+    req.partnerId = request.partnerId;
+    req.prepayId  = request.prepayId;
+    req.nonceStr  = request.nonceStr;
+    req.timeStamp = request.timeStamp;
+    req.package   = request.package;
+    req.sign      = request.sign;
+    return [WXApi sendReq:req];
+}
+
 -(BOOL)handleOpenURL:(NSURL *)url{
     BOOL result = [WXApi handleOpenURL:url delegate:self];
     return result;
@@ -80,17 +99,17 @@
     return result;
 }
 
-
 /*************WXApiDelegate********************/
-
 - (void)onReq:(BaseReq*)req{
-    if ([req isKindOfClass:PayResp.class]) {
-        
-    }
+    
 }
 
 - (void)onResp:(BaseResp *)resp{
-    
+    if ([resp isKindOfClass:PayResp.class]) {
+        if (self.completionBlock) {
+            self.completionBlock(resp.errCode,nil);
+        }
+    }
 }
 
 @end

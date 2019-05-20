@@ -11,9 +11,34 @@
 
 @end
 
+@implementation KKWechatPayBaseRequest
+
+@end
+
+@implementation KKWechatPayBaseResponse
+
+@end
 
 
-@implementation KKWechatPayReq
 
+
+@implementation KKWechatPayRequest
+
+@end
+
+
+@implementation KKWechatPayResponse
+
+@end
+
+
+
+
+
+@implementation KKWechatAuthorRequest
+
+@end
+
+@implementation KKWechatAuthorResponse
 
 @end
