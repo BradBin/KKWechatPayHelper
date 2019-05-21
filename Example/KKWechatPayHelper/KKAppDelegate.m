@@ -7,11 +7,14 @@
 //
 
 #import "KKAppDelegate.h"
+#import <KKWechatPayHelper/KKWechatPayHelper.h>
 
 @implementation KKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [KKWechatPayManager.shared setWechatPayMode:KKWechatPayModeDetail];
+    [KKWechatPayManager.shared registerApp:@"wxb4ba3c02aa476ea1" enableMTA:false];
     // Override point for customization after application launch.
     return YES;
 }
@@ -42,5 +45,14 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+   return [KKWechatPayManager.shared handleOpenURL:url];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+   return [KKWechatPayManager.shared handleOpenURL:url sourceApplication:sourceApplication];
+}
+
 
 @end

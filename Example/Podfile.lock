@@ -1,23 +1,55 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - KKWechatPayHelper (1.0.0):
     - WechatOpenSDK (~> 1.8.4)
+  - Masonry (1.1.0)
+  - SVProgressHUD (2.2.5)
   - WechatOpenSDK (1.8.4)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - AFNetworking
   - KKWechatPayHelper (from `../`)
+  - Masonry
+  - SVProgressHUD
+  - YYKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - Masonry
+    - SVProgressHUD
     - WechatOpenSDK
+    - YYKit
 
 EXTERNAL SOURCES:
   KKWechatPayHelper:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   KKWechatPayHelper: ef70246c2ba9937e1b15739dbe5e497b46ee24fb
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 96c145da56eeed505f2719455735f69a8b02926f
+PODFILE CHECKSUM: 70096cad9c74783aa1fa1ef2b9fc2e9c03de52f9
 
 COCOAPODS: 1.6.1

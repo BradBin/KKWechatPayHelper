@@ -11,6 +11,7 @@
 #endif
 
 #import "KKWechatPayHelper.h"
+#import "KKWechatPayItem.h"
 #import "KKWechatPayManager.h"
 
 FOUNDATION_EXPORT double KKWechatPayHelperVersionNumber;

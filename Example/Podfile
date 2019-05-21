@@ -4,6 +4,11 @@ platform :ios, '9.0'
 
 target 'KKWechatPayHelper_Example' do
   pod 'KKWechatPayHelper', :path => '../'
+  
+  pod 'Masonry'
+  pod 'YYKit'
+  pod 'AFNetworking'
+  pod 'SVProgressHUD'
 
   target 'KKWechatPayHelper_Tests' do
     inherit! :search_paths

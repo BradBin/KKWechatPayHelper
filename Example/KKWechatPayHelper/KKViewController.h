@@ -11,3 +11,18 @@
 @interface KKViewController : UIViewController
 
 @end
+
+
+
+
+@interface KKPayItem : NSObject
+
+@property (nonatomic,copy) NSString *appid;
+@property (nonatomic,copy) NSString *noncestr;
+@property (nonatomic,copy) NSString *package;
+@property (nonatomic,copy) NSString *partnerid;
+@property (nonatomic,copy) NSString *prepayid;
+@property (nonatomic,copy) NSString *sign;
+@property (nonatomic,assign) NSTimeInterval timestamp;
+
+@end
