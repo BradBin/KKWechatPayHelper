@@ -54,5 +54,8 @@
    return [KKWechatPayManager.shared handleOpenURL:url sourceApplication:sourceApplication];
 }
 
+-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+    return [KKWechatPayManager.shared handleOpenURL:url options:options];
+}
 
 @end

@@ -94,7 +94,7 @@ typedef void(^ _Nullable KKWechatPayBlock)(KKWechatPayStatus status,KKWechatPayR
 /**
  发起微信支付请求
  备注:支付成功则去后台查询支付结果,再去展示给用户实际支付结果页面,一定
- 不能以客户端返回作为t用户支付结果
+ 不能以客户端返回作为用户支付结果
 
  @param request 请求内容
  @param completion 请求结果回调block
@@ -118,6 +118,17 @@ typedef void(^ _Nullable KKWechatPayBlock)(KKWechatPayStatus status,KKWechatPayR
  @return 回调结果
  */
 - (BOOL)handleOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication;
+
+
+
+
+/**
+ 处理客户端回调
+ -(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
+ @param url url
+ @return 回调结果
+ */
+- (BOOL)handleOpenURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options;
 
 
 @end

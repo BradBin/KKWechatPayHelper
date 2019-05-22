@@ -102,6 +102,11 @@
     return result;
 }
 
+- (BOOL)handleOpenURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+    BOOL result = [WXApi handleOpenURL:url delegate:self];
+    return result;
+}
+
 /*************WXApiDelegate********************/
 - (void)onReq:(BaseReq*)req{
     
