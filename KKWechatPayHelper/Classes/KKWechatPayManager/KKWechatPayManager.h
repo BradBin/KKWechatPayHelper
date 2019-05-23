@@ -97,10 +97,11 @@ typedef void(^ _Nullable KKWechatPayBlock)(KKWechatPayStatus status,KKWechatPayR
  不能以客户端返回作为用户支付结果
 
  @param request 请求内容
- @param completion 请求结果回调block
+ @param success 成功h回调block
+ @param failure 失败回调block
  @return 成功返回YES，失败返回NO
  */
-- (BOOL)payOrder:(KKWechatPayRequest *)request completion:(KKWechatPayBlock)completion;
+- (BOOL)payOrder:(KKWechatPayRequest *)request success:(KKWechatPayBlock)success failure:(KKWechatPayBlock)failure;
 
 /**
  处理客户端回调
@@ -109,7 +110,7 @@ typedef void(^ _Nullable KKWechatPayBlock)(KKWechatPayStatus status,KKWechatPayR
  @param url url
  @return 回调结果
  */
-- (BOOL)handleOpenURL:(NSURL *)url;
+- (BOOL)handleOpenURL:(NSURL *)url NS_DEPRECATED_IOS(2_0, 9_0, "Please use handleOpenURL:options:");
 
 /**
  处理客户端回调
@@ -117,10 +118,7 @@ typedef void(^ _Nullable KKWechatPayBlock)(KKWechatPayStatus status,KKWechatPayR
  @param url url
  @return 回调结果
  */
-- (BOOL)handleOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication;
-
-
-
+- (BOOL)handleOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication NS_DEPRECATED_IOS(4_2, 9_0, "Please use handleOpenURL:options:");
 
 /**
  处理客户端回调
@@ -128,7 +126,7 @@ typedef void(^ _Nullable KKWechatPayBlock)(KKWechatPayStatus status,KKWechatPayR
  @param url url
  @return 回调结果
  */
-- (BOOL)handleOpenURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options;
+- (BOOL)handleOpenURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options NS_AVAILABLE_IOS(9_0);
 
 
 @end

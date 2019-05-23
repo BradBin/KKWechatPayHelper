@@ -46,16 +46,17 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-   return [KKWechatPayManager.shared handleOpenURL:url];
-}
-
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-   return [KKWechatPayManager.shared handleOpenURL:url sourceApplication:sourceApplication];
-}
-
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 90000
 -(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
     return [KKWechatPayManager.shared handleOpenURL:url options:options];
 }
+#else
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url NS_DEPRECATED_IOS(2_0, 9_0){
+    return [KKWechatPayManager.shared handleOpenURL:url];
+}
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation NS_DEPRECATED_IOS(4_2, 9_0){
+    return [KKWechatPayManager.shared handleOpenURL:url sourceApplication:sourceApplication];
+}
+#endif
 
 @end

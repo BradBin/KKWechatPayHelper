@@ -17,9 +17,13 @@
 @property (nonatomic,assign) KKWechatPayMode mode;
 
 /**
- 支付回调block
+ 成功回调block
  */
-@property (nonatomic,  copy) KKWechatPayBlock completionBlock;
+@property (nonatomic,  copy) KKWechatPayBlock success;
+/**
+ 失败回调block
+ */
+@property (nonatomic,  copy) KKWechatPayBlock failure;
 
 @end
 
@@ -80,8 +84,9 @@
     return [NSURL URLWithString:WXApi.getWXAppInstallUrl];
 }
 
--(BOOL)payOrder:(KKWechatPayRequest *)request completion:(KKWechatPayBlock)completion{
-    self.completionBlock = completion;
+-(BOOL)payOrder:(KKWechatPayRequest *)request success:(KKWechatPayBlock)success failure:(KKWechatPayBlock)failure{
+    self.success  = success;
+    self.failure  = failure;
     PayReq *req   = PayReq.alloc.init;
     req.partnerId = request.partnerId;
     req.prepayId  = request.prepayId;
@@ -114,36 +119,40 @@
 
 - (void)onResp:(BaseResp *)resp{
     if ([resp isKindOfClass:PayResp.class]) {
-        if (self.completionBlock) {
-            PayResp *payResp = (PayResp *)resp;
+        if (self.success || self.failure) {
+            PayResp *payResp   = (PayResp *)resp;
             NSString *errMsg   = [payResp.errStr stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet];
             KKWechatPayStatus status      = (KKWechatPayStatus)payResp.errCode;
             KKWechatPayResponse *response = KKWechatPayResponse.new;
-            response.errCode   = payResp.errCode;
-            response.type      = payResp.type;
-            response.returnKey = payResp.returnKey;
+            response.errCode              = payResp.errCode;
+            response.type                 = payResp.type;
+            response.returnKey            = payResp.returnKey;
             switch (status) {
                 case KKWechatPayStatusSuccess:
                     response.errStr = errMsg.length ? errMsg: @"支付成功";
+                    self.success(KKWechatPayStatusSuccess, response);
                     break;
                 case KKWechatPayStatusFailure:
                     response.errStr = errMsg.length ? errMsg: @"支付失败";
+                    self.failure(KKWechatPayStatusFailure, response);
                     break;
                 case KKWechatPayStatusCancel:
                     response.errStr = errMsg.length ? errMsg: @"支付取消";
+                    self.failure(KKWechatPayStatusCancel, response);
                     break;
                 default:
                     response.errStr = errMsg;
+                    self.failure(KKWechatPayStatusUnknown, response);
                     break;
             }
-            self.completionBlock(status,response);
+            
         }
     }else{
-        if (self.completionBlock) {
+        if (self.failure) {
             KKWechatPayResponse *response = KKWechatPayResponse.new;
-            response.errCode   = @(KKWechatPayStatusUnknown).integerValue;
-            response.errStr    = @"未知错误";
-            self.completionBlock(KKWechatPayStatusUnknown, response);
+            response.errCode = @(KKWechatPayStatusUnknown).integerValue;
+            response.errStr  = @"未知错误";
+            self.failure(KKWechatPayStatusUnknown, response);
         }
     }
 }

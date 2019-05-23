@@ -79,10 +79,11 @@
     request.timeStamp = payItem.timestamp;
     request.package   = payItem.package;
     request.sign      = payItem.sign;
-    [KKWechatPayManager.shared payOrder:request completion:^(KKWechatPayStatus status, KKWechatPayResponse * _Nonnull response) {
-        NSLog(@"*****%ld   %@",(long)status,response.modelDescription);
+    [KKWechatPayManager.shared payOrder:request success:^(KKWechatPayStatus status, KKWechatPayResponse * _Nonnull response) {
+        NSLog(@"success*****%ld   %@",(long)status,response.modelDescription);
+    } failure:^(KKWechatPayStatus status, KKWechatPayResponse * _Nonnull response) {
+        NSLog(@"failure*****%ld   %@",(long)status,response.modelDescription);
     }];
-    
 }
 
 //wxlog:has call system function
